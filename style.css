@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 99%;
+    margin: 0 auto;
+}
+
+header{
+    height: 80px;
+    max-width: 100%;
+    background-color: blue;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.enregistrement{
+    height: 600px;
+    border-radius: 5px;
+    width: 500px;
+    border: 2px solid blue;
+}
+.affichager{
+    max-height: 600px;
+    border-radius: 5px;
+    width: 1000px;
+    border: 2px solid blue;
+    overflow-y: auto;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    background-color: blue;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    gap: 8px;
+    margin-top: 10px;
+    color: blue;
+    font-size: 20px;
+}
+
+#ajouter{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: blue; 
+  color: #fff; 
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 150px;
+  margin: auto;
+}
+
+form div{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+#prenom, #nom, #grouper {
+    height: 30px;
+    border-radius: 4px;
+}
+
+textarea{
+    border-radius: 4px;
+}
+
+.custom-file-input {
+    padding: 10px 15px;
+    font-size: 17px;
+    width: 160px;
+  }
+  
+
+  #image-preview {
+    max-width: 150px; 
+    height: 150px;
+    border-radius: 4px;
+
+  }
+
+  #image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+
+  }
+
+
+img{
+    max-width: 150px; 
+    height: 110px;
+    clip-path:ellipse(33% 50%);
+
+  }
+
+.info-container{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin: 20px 10px;
+
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.affichagerPer img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+   
+}
+
+.affichagerPer {
+  list-style-type: none; 
+  
+}
+
+.delete-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.personne {
+  position: relative;
+  border: 3px solid #ccc;
+  margin: 10px;
+}

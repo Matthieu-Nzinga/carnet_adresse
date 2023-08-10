@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carnet-contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Repertoire de Contact</h1>
+    </header>
+    <main>
+        <section>
+            <div class="enregistrement">
+                <h2>Formulaire de contact</h2>
+                <form id="monFormulaire">
+                    <label for="prenom">Prenom </label>
+                    <input type="text" id="prenom" name="prenom" >
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" >
+                    <label for="groupe">Groupe</label>
+                    <select id="grouper" name="groupe">
+                        <option value="" disabled selected hidden></option>
+                        <option value="famille">Famille</option>
+                        <option value="amis">Amis</option>
+                        <option value="connaissance">Connaissance</option>
+                    </select>
+                    <label for="biographie">Biographie </label>
+                    <textarea name="biographie" id="biographier" cols="30" rows="5"></textarea>
+                    
+                    <div>
+                        <input class="custom-file-input" type="file" id="file" name="file" onchange="displayImage(event)">
+                    <div id="image-preview"></div>
+                    </div>
+
+                    <input type="submit" id="ajouter" value="Ajouter">
+                </form>
+            </div>
+            
+            <div class="affichager" id="affichager">
+                <h2>Liste de contact</h2>
+                <ul class="affichagerPer">
+
+                </ul>
+               
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
